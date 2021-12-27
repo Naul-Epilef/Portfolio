@@ -42,7 +42,8 @@ h1 {
 }
 
 .rulesOfThree {
-    transition: padding-top var(--transition-time);
+    margin-top: calc(var(--header-height) + 15px);
+    transition: margin-top var(--transition-time);
 }
 
 .inputsGroup {
@@ -63,6 +64,6 @@ h1 {
     }
 
     .rulesOfThree {
-        padding-top: 60px;
+        margin-top: calc(var(--header-height) + 10px);
     }
 }

@@ -1,4 +1,4 @@
-@extends('default.layout');
+@extends('default.layout')
 
 @section('content')
 <div class="rulesOfThree">
