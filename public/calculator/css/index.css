@@ -1,0 +1,9 @@
+#listCalcs {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.listCalc {
+    text-decoration: underline !important;
+}

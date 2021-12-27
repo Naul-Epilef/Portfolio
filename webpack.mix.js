@@ -33,5 +33,9 @@ mix.styles(
         ["resources/views/calculator/js/rulesOfThree.js"],
         "public/calculator/js/rulesOfThree.js"
     )
+    .styles(
+        ["resources/views/calculator/css/index.css"],
+        "public/calculator/css/index.css"
+    )
     .sass("resources/sass/app.scss", "public/site/css/fontawesome.css")
     .version();

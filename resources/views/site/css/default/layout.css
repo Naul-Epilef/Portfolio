@@ -60,3 +60,7 @@ a:visited {
 .widthDefault {
     width: 900px;
 }
+
+ul li {
+    list-style: none;
+}
