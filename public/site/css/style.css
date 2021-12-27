@@ -1,0 +1,388 @@
+:root {
+    --blue-dark-hex: #082032;
+    --blue-dark-rgb: rgb(8, 32, 50);
+
+    --blue-smooth-hex: #2c394b;
+    --blue-smooth-rgb: rgb(44, 57, 75);
+
+    --blue-strong-hex: #334756;
+    --blue-strong-rgb: rgb(51, 71, 86);
+    --blue-strong-rgb-5: rgb(51, 71, 86, 0.5);
+
+    --orange-hex: #ff4c29;
+    --orange-rgb: rgb(255, 76, 41);
+
+    --transition-time: 0.23s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+
+    font-size: 100%;
+
+    font-family: "Nunito", sans-serif;
+
+    background-color: var(--blue-dark-hex);
+    color: var(--orange-hex);
+}
+
+section {
+    height: 100vh;
+}
+
+section:nth-child(odd) {
+    background-color: var(--blue-dark-hex);
+}
+
+section:nth-child(even) {
+    background-color: var(--blue-smooth-hex);
+}
+
+a {
+    text-decoration: none;
+    color: var(--orange-hex);
+}
+
+a:visited {
+    color: var(--orange-hex);
+}
+
+.widthDefault {
+    width: 900px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 90px;
+
+    padding: 25px;
+
+    backdrop-filter: blur(4px);
+    background-color: var(--blue-strong-rgb-5);
+
+    border-bottom: 1px solid var(--blue-dark-hex);
+
+    transition: height var(--transition-time);
+}
+
+.HeaderFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.OpenMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.Anchors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 500px;
+    height: 40px;
+}
+
+.Anchors li {
+    list-style: none;
+    transition: font-size var(--transition-time), opacity var(--transition-time),
+        font-weight var(--transition-time);
+
+    font-size: 18px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.Anchors li:hover {
+    font-size: 22px;
+    opacity: 1;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(0, 0, 0, 0);
+    color: var(--orange-hex);
+    border: none;
+    outline: none;
+}
+
+i {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 15vh;
+        background-color: var(--blue-strong-rgb-5);
+        flex-wrap: wrap;
+        backdrop-filter: blur(4px);
+    }
+
+    .header {
+        height: 45vh;
+    }
+
+    .HeaderFlex {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        width: 90%;
+        height: 70px;
+    }
+
+    .HeaderFlex h2 {
+        justify-content: flex-start;
+        font-size: 42px;
+        margin: 1rem 0;
+        margin-right: 1rem;
+    }
+
+    .HeaderFlex button {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .HeaderFlex button i {
+        font-size: 42px;
+    }
+
+    .ToggleMobileMode {
+        display: flex !important;
+        order: 1;
+        align-items: center;
+        justify-content: center;
+        height: 260px;
+    }
+
+    .ToggleMobileMode ul {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .Anchors {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .Anchors li {
+        font-size: 25px;
+        opacity: 0.9;
+        font-weight: 500;
+
+        width: 100%;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid var(--blue-dark-rgb);
+    }
+
+    .Anchors li:hover {
+        font-size: 30px;
+        opacity: 1;
+        font-weight: 900;
+    }
+
+    .HeaderAnchors {
+        display: none;
+    }
+}
+
+/* Start | Who am I */
+
+#WhoAmI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhoAmI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhoAmI p {
+    font-size: 50px;
+    align-self: center;
+}
+
+/* End | Who am I */
+
+/* Start | Projects */
+
+#Projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProjectsGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Project {
+    background-color: #2b2424;
+    height: 300px;
+    width: 200px;
+}
+
+/* End | Projects */
+
+/* Start | Services */
+
+#Services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ServicesGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Service {
+    background-color: #2b2424;
+    height: 300px;
+    width: 200px;
+}
+
+/* End | Projects */
+
+/* Start | Services */
+
+#Skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skill {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.BackgroundLoad {
+    width: 400px;
+    height: 45px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background-color: gray;
+}
+
+.Load {
+    width: 0%;
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ededed;
+
+    font-size: 16px;
+
+    animation: loadLoader forwards;
+    animation-delay: var(--transition-time);
+    animation-duration: calc(var(--transition-time) * 3);
+}
+
+.Load span {
+    /* font-size: 0px; */
+    animation: textLoader forwards;
+    animation-delay: calc(var(--transition-time) * 0);
+    animation-duration: calc(var(--transition-time) * 3);
+}
+
+.Load i {
+    /* font-size: 0px; */
+    animation: textLoader forwards;
+    animation-delay: calc(var(--transition-time) * 0);
+    animation-duration: calc(var(--transition-time) * 3);
+}
+
+/* @keyframes loadLoader {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes textLoader {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 16px;
+    }
+} */
+
+.phpColor {
+    background-color: #8892bf;
+}
+
+.laravelColor {
+    background-color: #ff2d20;
+}
+
+.cssColor {
+    background-color: #29aae3;
+}
+
+/* End | Services */
+
+/* Start | Contact */
+
+#Contact {
+    display: flex;
+    justify-content: center;
+}
+
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ContactForm input {
+    margin-bottom: 10px;
+}
+
+/* End | Contact */

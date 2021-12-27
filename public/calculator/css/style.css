@@ -1,0 +1,68 @@
+input {
+    height: 200px;
+
+    text-align: center;
+
+    margin: 0 20px;
+    padding: 0 0.5rem;
+
+    border: 0px;
+    border-radius: 5px;
+
+    font-size: 70px;
+
+    color: var(--orange-hex);
+    background-color: var(--blue-strong-hex);
+
+    max-width: 15rem;
+
+    outline: none;
+    transition: max-width var(--transition-time), height var(--transition-time),
+        font-size var(--transition-time);
+}
+
+input::placeholder {
+    color: var(--orange-rgb-5);
+    opacity: 0.5;
+}
+
+input:disabled {
+    background-color: var(--blue-strong-rgb-5);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.textParagaph {
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 700px;
+}
+
+.rulesOfThree {
+    transition: padding-top var(--transition-time);
+}
+
+.inputsGroup {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 10px;
+    place-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    input {
+        height: 180px;
+
+        font-size: 50px;
+
+        max-width: 12rem;
+    }
+
+    .rulesOfThree {
+        padding-top: 60px;
+    }
+}

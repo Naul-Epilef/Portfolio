@@ -1,0 +1,174 @@
+/* Start | Who am I */
+
+#WhoAmI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhoAmI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhoAmI p {
+    font-size: 50px;
+    align-self: center;
+}
+
+/* End | Who am I */
+
+/* Start | Projects */
+
+#Projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProjectsGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Project {
+    background-color: #2b2424;
+    height: 300px;
+    width: 200px;
+}
+
+/* End | Projects */
+
+/* Start | Services */
+
+#Services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ServicesGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Service {
+    background-color: #2b2424;
+    height: 300px;
+    width: 200px;
+}
+
+/* End | Projects */
+
+/* Start | Services */
+
+#Skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skill {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.BackgroundLoad {
+    width: 400px;
+    height: 45px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background-color: gray;
+}
+
+.Load {
+    width: 0%;
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ededed;
+
+    font-size: 16px;
+
+    animation: loadLoader forwards;
+    animation-delay: var(--transition-time);
+    animation-duration: calc(var(--transition-time) * 3);
+}
+
+.Load span {
+    /* font-size: 0px; */
+    animation: textLoader forwards;
+    animation-delay: calc(var(--transition-time) * 0);
+    animation-duration: calc(var(--transition-time) * 3);
+}
+
+.Load i {
+    /* font-size: 0px; */
+    animation: textLoader forwards;
+    animation-delay: calc(var(--transition-time) * 0);
+    animation-duration: calc(var(--transition-time) * 3);
+}
+
+/* @keyframes loadLoader {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes textLoader {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 16px;
+    }
+} */
+
+.phpColor {
+    background-color: #8892bf;
+}
+
+.laravelColor {
+    background-color: #ff2d20;
+}
+
+.cssColor {
+    background-color: #29aae3;
+}
+
+/* End | Services */
+
+/* Start | Contact */
+
+#Contact {
+    display: flex;
+    justify-content: center;
+}
+
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ContactForm input {
+    margin-bottom: 10px;
+}
+
+/* End | Contact */
