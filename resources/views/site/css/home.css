@@ -103,9 +103,47 @@
 }
 
 .Service {
+    border-radius: 10px;
     background-color: #2b2424;
-    height: 300px;
-    width: 200px;
+    height: 420px;
+    width: 250px;
+    overflow: hidden;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* box-shadow: 0 0 0px black; */
+    /* animation: shadowMove forwards;
+    animation-delay: var(--transition-time);
+    animation-duration: calc(var(--transition-time) * 7); */
+}
+
+.Service img {
+    /* border-radius: 10px; */
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.container p {
+    font-size: 1.1rem;
+    padding: 0 7px;
+}
+
+.container a {
+    text-decoration: underline;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
 }
 
 /* End | Projects */
