@@ -1,10 +1,11 @@
-const maxWidth = 100,
+const maxWidth = 85,
     minWidth = 30,
-    maxExp = 100,
+    maxExp = 85,
     minExp = 30;
 
 const backgroundLoads = document.getElementsByClassName("BackgroundLoad");
 const arr = [...backgroundLoads];
+const welcomeHTML = document.querySelector(".Welcome");
 
 let root = document.documentElement;
 
@@ -12,6 +13,8 @@ let transitionTime =
     getComputedStyle(root).getPropertyValue("--transition-time");
 
 transitionTime = convertTransitionTime(transitionTime);
+console.log(welcomeHTML);
+typeWriter(welcomeHTML);
 
 arr.forEach((backgroundLoad) => {
     const widthPercent =
@@ -43,14 +46,18 @@ arr.forEach((backgroundLoad) => {
         duration: transitionTime,
         // iterations: Infinity,
     });
-
-    console.log(span);
-
-    console.log(widthPercent);
 });
 
 function convertTransitionTime(tt) {
     tt = tt.split("s")[0];
     tt = tt * 1000;
     return tt;
+}
+
+function typeWriter(element) {
+    const textArr = element.innerHTML.split("");
+    element.innerHTML = "";
+    textArr.forEach((letter, i) => {
+        setTimeout(() => (element.innerHTML += letter), 75 * i);
+    });
 }

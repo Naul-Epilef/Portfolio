@@ -39,7 +39,7 @@ body {
 }
 
 section {
-    height: 100vh;
+    height: 60vh;
 }
 
 section:nth-child(odd) {
@@ -228,13 +228,40 @@ i {
 
 .WhoAmI {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.WhoAmI p {
-    font-size: 50px;
-    align-self: center;
+.WhoAmI .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.WhoAmI .container span {
+    font-size: 2rem;
+}
+
+.WhoAmI .container p {
+    font-size: 3rem;
+    align-self: flex-start;
+}
+
+.WhoAmI .container p::after {
+    content: "|";
+    animation: blink infinite;
+    animation-duration: calc(var(--transition-time) * 3);
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 /* End | Who am I */
@@ -277,7 +304,7 @@ i {
     padding-bottom: 10px;
 }
 
-.container {
+.Project .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -285,12 +312,12 @@ i {
     padding: 5px 15px;
 }
 
-.container p {
+.Project .container p {
     font-size: 1.1rem;
     padding: 0 7px;
 }
 
-.container a {
+.Project .container a {
     text-decoration: underline;
     margin: auto 0;
     display: flex;
@@ -346,7 +373,7 @@ i {
     padding-bottom: 10px;
 }
 
-.container {
+.Service .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -354,12 +381,12 @@ i {
     padding: 5px 15px;
 }
 
-.container p {
+.Service .container p {
     font-size: 1.1rem;
     padding: 0 7px;
 }
 
-.container a {
+.Service .container a {
     text-decoration: underline;
     margin: auto 0;
     display: flex;
@@ -464,16 +491,14 @@ i {
 #Contact {
     display: flex;
     justify-content: center;
+    height: 10vh !important;
 }
 
-.ContactForm {
+.Contact {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.ContactForm input {
-    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 /* End | Contact */

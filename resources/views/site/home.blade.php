@@ -7,7 +7,11 @@
     <div class="widthDefault">
         <div class="WhoAmI">
             <img src="https://i.redd.it/j3kyc6z4kzd61.jpg" width="200" alt="Imagem minha">
-            <p>Olá, eu me chamo <br><strong>Luan Felipe</strong><br>Seja bem vindo <br> ao meu domínio</p>
+            <div class='container'>
+                <span>Olá pessoa!</span>
+                <span>Eu me chamo <strong>Luan Felipe</strong></span>
+                <p class='Welcome'>Seja bem vindo ao meu domínio</p>
+            </div>
         </div>
     </div>
 </section>
@@ -91,11 +95,10 @@
 </section>
 <section id="Contact">
     <div class="widthDefault">
-        <form class="ContactForm">
-            <input type="text" id="name" placeholder="Nome">
-            <input type="text" id="email" placeholder="E-mail">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
-        </form>
+        <div class="Contact">
+            <span>&lt;adicione seu email&gt;</span>
+            <span>&lt;número&gt;</span>
+        </div>
     </div>
 </section>
 {{-- </div> --}}
