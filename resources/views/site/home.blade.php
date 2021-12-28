@@ -14,9 +14,27 @@
 <section id="Projects">
     <div class="widthDefault">
         <div class="ProjectsGroup">
-            <div class="Project"></div>
-            <div class="Project"></div>
-            <div class="Project"></div>
+            <div class="Project">
+                <img src="https://w.wallhaven.cc/full/ne/wallhaven-ne2qwr.jpg" alt="FOREST">
+                <div class="container">
+                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur id dui posuere blandit.</p>
+                    <a href="{{ url("/") }}">Ver Mais...</a>
+                </div>
+            </div>
+            <div class="Project">
+                <img src="https://www.nicepng.com/png/full/332-3323835_artworki-drew-a-disturbed-looking-kirby-for-your.png" alt="Kirby">
+                <div class="container">
+                    <p>Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                    <a href="{{ url("/") }}">Ver Mais...</a>
+                </div>
+            </div>
+            <div class="Project">
+                <img src="https://i.pinimg.com/originals/1b/84/a6/1b84a683cc4ade821b5425a7c8ed8964.jpg" alt="INFANCIA NA AREA">
+                <div class="container">
+                    <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus suscipit tortor eget felis volutpat.</p>
+                    <a href="{{ url("/") }}">Ver Mais...</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
