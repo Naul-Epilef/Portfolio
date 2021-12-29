@@ -18,7 +18,16 @@
 <section id="Projects">
     <div class="widthDefault">
         <div class="ProjectsGroup">
+            @foreach ($projects as $project)
             <div class="Project">
+                <img src="{{ $project->img }}" alt="{{ $project->name }}">
+                <div class="container">
+                    <p>{{ $project->description }}</p>
+                    <a href="{{ url($project->link) }}">Ver Mais...</a>
+                </div>
+            </div>
+            @endforeach
+            {{-- <div class="Project">
                 <img src="https://w.wallhaven.cc/full/ne/wallhaven-ne2qwr.jpg" alt="FOREST">
                 <div class="container">
                     <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur id dui posuere blandit.</p>
@@ -38,7 +47,7 @@
                     <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus suscipit tortor eget felis volutpat.</p>
                     <a href="{{ url("/") }}">Ver Mais...</a>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>

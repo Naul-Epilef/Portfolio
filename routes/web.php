@@ -3,6 +3,7 @@
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CalculatorsController;
 
 /*
@@ -16,10 +17,8 @@ use App\Http\Controllers\CalculatorsController;
 |
 */
 
-Route::get('/', function () {
-    return view('site.home');
-})->name("home");
+Route::get('/', [HomeController::class, "lists"])->name("home");
 
-Route::get("/calc", [CalculatorsController::class, 'index'])->name("calculators.index");
+Route::get("/calc", [CalculatorsController::class, "index"])->name("calculators.index");
 
 Route::get("/calc/regra-de-tres", [CalculatorsController::class, "rulesOfThree"])->name("calculators.rulesOfThree");
